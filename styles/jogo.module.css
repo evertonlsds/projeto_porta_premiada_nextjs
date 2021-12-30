@@ -1,0 +1,12 @@
+#jogo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.portas{
+    display: flex;
+    align-self: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
