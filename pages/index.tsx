@@ -4,7 +4,6 @@ import PortaModel from "../model/porta";
 import {criarPortas, atualizarPortas} from "../functions/portas"
 
 
-
 export default function Home() {
   return (
     <div style ={{display: "flex"}}>
