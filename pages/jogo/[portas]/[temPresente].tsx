@@ -5,7 +5,7 @@ import { atualizarPortas, criarPortas } from "../../../functions/portas"
 import Link from "next/link"
 import { useRouter } from "next/router"
 
-export default function jogo(){
+export default function Jogo(){
   const router = useRouter()  
   
   const [valido, setValido] = useState(false)
@@ -17,7 +17,7 @@ export default function jogo(){
     const qtdeportasValidas =  portas >= 3 && portas <= 100
     const temPresenteValido = temPresente >= 1 && temPresente <= portas
     setValido(qtdeportasValidas && temPresenteValido)
-  },[portas])
+  },[portas, router.query.portas, router.query.temPresente ])
 
   useEffect(() => {
     const portas = +router.query.portas
